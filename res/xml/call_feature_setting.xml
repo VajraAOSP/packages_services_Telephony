@@ -93,4 +93,10 @@
         android:defaultValue="false"
         android:dependency="prox_auto_speaker" />
 
+    <SwitchPreference
+        android:key="use_intrusive_call"
+        android:title="@string/use_intrusive_call_title"
+        android:summary="@string/use_intrusive_call_summary"
+        android:persistent="false" />
+
 </PreferenceScreen>
