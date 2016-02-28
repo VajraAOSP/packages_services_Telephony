@@ -113,6 +113,8 @@ public class CallFeaturesSetting extends PreferenceActivity
 
     private static final String ENABLE_VIDEO_CALLING_KEY = "button_enable_video_calling";
 
+    private static final String FLIP_ACTION_KEY = "flip_action";
+
     private Phone mPhone;
     private SubscriptionInfoHelper mSubscriptionInfoHelper;
     private TelecomManager mTelecomManager;
@@ -121,6 +123,7 @@ public class CallFeaturesSetting extends PreferenceActivity
     private PreferenceScreen mVoicemailSettingsScreen;
     private CheckBoxPreference mEnableVideoCalling;
 
+    private ListPreference mFlipAction;
     private SwitchPreference mProxSpeaker;
     private SlimSeekBarPreference mProxSpeakerDelay;
     private SwitchPreference mProxSpeakerIncallOnly;
@@ -192,10 +195,22 @@ public class CallFeaturesSetting extends PreferenceActivity
             final boolean val = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(),
                     Settings.System.USE_INTRUSIVE_CALL, val ? 1 : 0);
+        } else if (preference == mFlipAction) {
+            int index = mFlipAction.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.CALL_FLIP_ACTION_KEY, index);
+            updateFlipActionSummary(index);
         }
 
         // Always let the preference setting proceed.
         return true;
+    }
+
+    private void updateFlipActionSummary(int value) {
+        if (mFlipAction != null) {
+            String[] summaries = getResources().getStringArray(R.array.flip_action_summary_entries);
+            mFlipAction.setSummary(getString(R.string.flip_action_summary, summaries[value]));
+        }
     }
 
     @Override
@@ -238,6 +253,15 @@ public class CallFeaturesSetting extends PreferenceActivity
         }
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mFlipAction = (ListPreference) findPreference(FLIP_ACTION_KEY);
+        if (mFlipAction != null) {
+            int flipAction = Settings.System.getInt(getContentResolver(),
+                    Settings.System.CALL_FLIP_ACTION_KEY, 2);
+            mFlipAction.setValue(String.valueOf(flipAction));
+            updateFlipActionSummary(flipAction);
+            mFlipAction.setOnPreferenceChangeListener(this);
+        }
 
         mProxSpeaker = (SwitchPreference) findPreference(PROX_AUTO_SPEAKER);
         mProxSpeakerIncallOnly = (SwitchPreference) findPreference(PROX_AUTO_SPEAKER_INCALL_ONLY);
