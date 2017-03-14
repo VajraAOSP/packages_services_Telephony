@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016-2017 The VajraAOSP Project by reS28raM
+     Copyright (C) 2012-2015 SlimRoms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Proximity speaker -->
+    <string name="display_category_prox_auto_speaker_title">Opzioni del vivavoce di prossimità</string>
+    <string name="prox_auto_speaker_title">Vivavoce di prossimità automatico</string>
+    <string name="prox_auto_speaker_summary">Abilita il vivavoce appena si allontana il dispositivo dal viso</string>
+    <string name="prox_auto_speaker_delay_title">Ritardo del vivavoce di prossimità</string>
+    <string name="prox_auto_speaker_delay_summary">Tempo di ritardo prima che il vivavoce venga attivato</string>
+    <string name="prox_auto_speaker_incall_only_title">Solo durante le chiamate</string>
+    <string name="prox_auto_speaker_incall_only_summary_on">Durante le chiamate in uscita, il servizio si attiverà solo alla risposta del ricevente</string>
+    <string name="prox_auto_speaker_incall_only_summary_off">Il servizio rimarrà attivo durante tutti gli stati in assenza di chiamate (default)</string>
+
+    <!-- Setting title for the flip action setting. -->
+    <string name="flip_action_title">Azione di rovesciamento</string>
+
+    <!-- Dialog title of the flip action setting. -->
+    <string name="flip_action_dialog_title">Rovesciare il dispositivo verso\u2026</string>
+
+    <!-- Setting summary for the flip action setting. -->
+    <string name="flip_action_summary">Rovesciare il telefono farà <xliff:g id="action">%s</xliff:g></string>
+
+    <!-- Values for flip action array entries -->
+    <string name="entry_do_nothing">Non fare nulla</string>
+    <string name="entry_mute_ringer">Silenzia la suoneria</string>
+    <string name="entry_dismiss_call">Termina la chiamata</string>
+    <string name="summary_do_nothing">non fare nulla</string>
+    <string name="summary_mute_ringer">silenzia la suoneria</string>
+    <string name="summary_dismiss_call">termina la chiamata</string>
+
+    <!-- Title for the option managing whether or not to use intrusive incall UI. -->
+    <string name="use_intrusive_call_title">Chiamate in arrivo intrusive</string>
+    <string name="use_intrusive_call_summary">Mostra una notifica a tutto schermo durante una chiamata in arrivo quando non si è sullo schermo di blocco</string>
+
+    <!-- Title for the option managing whether or not to show data connection type when roaming. -->
+    <string name="roaming_dataconnection_title">Mostra il tipo di connessione dati quando si è in roaming</string>
+    <string name="roaming_dataconnection_summary">Mostra il tipo di connessione dati (LTE, 3G, H...) sulla barra di stato / icona QS mentre si è in roaming e si è connessi (invece del semplice "R")</string>
+
+</resources>
