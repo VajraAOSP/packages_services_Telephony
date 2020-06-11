@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016-2017 The VajraAOSP Project by reS28raM
+<!-- Copyright (C) 2018-2020 VajraAOSP Lusty & Gorgeous Software, Ltd.
+     Copyright (C) 2016-2017 The VajraAOSP Project by reS28raM
      Copyright (C) 2012-2015 SlimRoms Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,6 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Proximity speaker -->
@@ -36,7 +38,7 @@
     <string name="flip_action_summary">Rovesciare il telefono farà: <xliff:g id="action">%s</xliff:g></string>
 
     <!-- Values for flip action array entries -->
-    <string name="entry_do_nothing">Non fare nulla</string>
+    <string name="entry_do_nothing">Nulla.</string>
     <string name="entry_mute_ringer">Silenziare la suoneria</string>
     <string name="entry_dismiss_call">Terminare la chiamata</string>
     <string name="summary_do_nothing">nulla.</string>
