@@ -30,18 +30,18 @@
     <string name="flip_action_title">Azione di rovesciamento</string>
 
     <!-- Dialog title of the flip action setting. -->
-    <string name="flip_action_dialog_title">Rovesciare il dispositivo verso\u2026</string>
+    <string name="flip_action_dialog_title">Rovesciare il dispositivo farà\u2026</string>
 
     <!-- Setting summary for the flip action setting. -->
-    <string name="flip_action_summary">Rovesciare il telefono farà <xliff:g id="action">%s</xliff:g></string>
+    <string name="flip_action_summary">Rovesciare il telefono farà: <xliff:g id="action">%s</xliff:g></string>
 
     <!-- Values for flip action array entries -->
     <string name="entry_do_nothing">Non fare nulla</string>
-    <string name="entry_mute_ringer">Silenzia la suoneria</string>
-    <string name="entry_dismiss_call">Termina la chiamata</string>
-    <string name="summary_do_nothing">non fare nulla</string>
-    <string name="summary_mute_ringer">silenzia la suoneria</string>
-    <string name="summary_dismiss_call">termina la chiamata</string>
+    <string name="entry_mute_ringer">Silenziare la suoneria</string>
+    <string name="entry_dismiss_call">Terminare la chiamata</string>
+    <string name="summary_do_nothing">nulla.</string>
+    <string name="summary_mute_ringer">silenziare la suoneria</string>
+    <string name="summary_dismiss_call">terminare la chiamata</string>
 
     <!-- Title for the option managing whether or not to use intrusive incall UI. -->
     <string name="use_intrusive_call_title">Chiamate in arrivo intrusive</string>
